@@ -10,7 +10,7 @@ public class Main {
         Account c1 = new Account(100, "Judson Paiva", 10000.0);
         Account c2 = new Account(200, "Leonor José");
 
-        System.out.println("Update account data");
+        System.out.println("Updated account data");
         c2.deposit(5000.02);
         c1.withdraw(50.0);
 

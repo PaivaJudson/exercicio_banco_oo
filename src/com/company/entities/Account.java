@@ -2,23 +2,23 @@ package com.company.entities;
 
 public class Account {
 
-    private Integer number;
+    private int number;
     private String holder;
-    private Double balance;
+    private double balance;
 
-    public Account(Integer number, String holder, Double initialDeposit) {
+    public Account(int number, String holder, double initialDeposit) {
         this.number = number;
         this.holder = holder;
         this.deposit(initialDeposit);
     }
 
-    public Account(Integer number, String holder) {
+    public Account(int number, String holder) {
         this.number = number;
         this.holder = holder;
         this.balance = 0.0;
     }
 
-    public Integer getNumber() {
+    public int getNumber() {
         return number;
     }
 
@@ -30,7 +30,7 @@ public class Account {
         this.holder = holder;
     }
 
-    public Double getBalance() {
+    public double getBalance() {
         return balance;
     }
 
@@ -44,10 +44,10 @@ public class Account {
 
     @Override
     public String toString() {
-        return "Account{" +
+        return "Account { " +
                 "number=" + number +
                 ", holder='" + holder + '\'' +
                 ", balance=" + balance +
-                '}';
+                " }";
     }
 }
